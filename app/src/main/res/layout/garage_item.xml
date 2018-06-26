@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardview_garages"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:id="@+id/garage_image"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher"/>
+
+            />
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:text="Garage_name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/garage_name"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Location"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/garage_location"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:text="7.00AM -"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/garage_openTime"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="8.00PM"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/garage_closeTime"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
